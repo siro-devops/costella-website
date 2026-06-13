@@ -12,8 +12,9 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <span class="logo-text">Costella</span>
-                <span class="logo-tagline">We speak to factories so you don't have to.</span>
+                <div class="logo-text">Costella</div>
+                <div class="logo-second">Procurement Advisory</div>
+                <div class="logo-tagline">Sourced right. Every time.</div>
             </div>
             <nav>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
@@ -29,7 +30,7 @@
     </header>
 
     <main>
-        <section class="hero" style="padding: 60px 0;">
+        <section class="hero" style="padding: 60px 0; background: linear-gradient(rgba(4, 44, 83, 0.9), rgba(4, 44, 83, 0.9)), url('images/hero-bg.jpg'); background-size: cover; background-position: center;">
             <div class="container">
                 <h1>How it works</h1>
                 <p class="hero-subtitle" style="max-width: 600px;">Six steps from discovery to delivery. No guesswork. No hidden fees.</p>
@@ -40,75 +41,57 @@
             <div class="container">
                 <div class="process-timeline">
                     
-                    <!-- Step 1 -->
                     <div class="process-step">
                         <div class="step-number">1</div>
                         <div class="step-content">
                             <h3>Discovery call <span class="step-free">(free, 30 min)</span></h3>
                             <p>We hop on a call to understand your product, quantity, budget, and timeline. No pressure. No obligation. We'll recommend the right service tier for your needs.</p>
-                            <div class="step-detail">
-                                <strong>Cost:</strong> Free
-                            </div>
+                            <div class="step-detail"><strong>Cost:</strong> Free</div>
                         </div>
                     </div>
 
-                    <!-- Step 2 -->
                     <div class="process-step">
                         <div class="step-number">2</div>
                         <div class="step-content">
                             <h3>Engagement letter + retainer invoice (50%)</h3>
-                            <p>You sign a simple one-page agreement. We invoice 50% of the retainer. No work starts until this is signed, protects both of us.</p>
-                            <div class="step-detail">
-                                <strong>Payment:</strong> 50% of retainer due now. Example: Business tier = $175 due.
-                            </div>
+                            <p>You sign a simple one-page agreement. We invoice 50% of the retainer. No work starts until this is signed — protects both of us.</p>
+                            <div class="step-detail"><strong>Payment:</strong> 50% of retainer due now. Example: Business tier = $175 due.</div>
                         </div>
                     </div>
 
-                    <!-- Step 3 -->
                     <div class="process-step">
                         <div class="step-number">3</div>
                         <div class="step-content">
                             <h3>Spec briefing session + remaining retainer (50%)</h3>
-                            <p>A dedicated hour to go deep on your exact specifications, certifications, packaging, labelling, delivery terms, and anything else that matters. The remaining 50% of retainer is due before this session.</p>
-                            <div class="step-detail">
-                                <strong>Payment:</strong> Remaining 50% of retainer due. Example: Business tier = $175 due. Total retainer paid: $350.
-                            </div>
+                            <p>A dedicated hour to go deep on your exact specifications — certifications, packaging, labelling, delivery terms, and anything else that matters.</p>
+                            <div class="step-detail"><strong>Payment:</strong> Remaining 50% of retainer due. Example: Business tier = $175 due. Total retainer paid: $350.</div>
                         </div>
                     </div>
 
-                    <!-- Step 4 -->
                     <div class="process-step">
                         <div class="step-number">4</div>
                         <div class="step-content">
                             <h3>Supplier shortlist & quotes delivered</h3>
-                            <p>We research, vet, and contact suppliers on your behalf. You receive a comparison sheet with 3–5+ vetted options, prices, lead times, payment terms, and our risk rating for each.</p>
-                            <div class="step-detail">
-                                <strong>Timeline:</strong> 5–7 business days from spec briefing. <strong>Cost covered by retainer.</strong>
-                            </div>
+                            <p>We research, vet, and contact suppliers on your behalf. You receive a comparison sheet with 3–5+ vetted options.</p>
+                            <div class="step-detail"><strong>Timeline:</strong> 5–7 business days. <strong>Cost covered by retainer.</strong></div>
                         </div>
                     </div>
 
-                    <!-- Step 5 -->
                     <div class="process-step">
                         <div class="step-number">5</div>
                         <div class="step-content">
                             <h3>Order placement & commission invoice</h3>
-                            <p>You pick your preferred supplier. We handle all communication, spec confirmations, sample approvals, and pre-shipment checks. You pay the supplier directly, we never hold your money. Commission invoice sent when you confirm your order in writing.</p>
-                            <div class="step-detail">
-                                <strong>Payment:</strong> Commission due now (retainer already paid separately). Example: $10,000 order at 6% = $600 commission.
-                            </div>
+                            <p>You pick your preferred supplier. We handle communication, spec confirmations, sample approvals, and pre-shipment checks.</p>
+                            <div class="step-detail"><strong>Payment:</strong> Commission due now (retainer already paid separately). Example: $10,000 order at 6% = $600 commission.</div>
                         </div>
                     </div>
 
-                    <!-- Step 6 -->
                     <div class="process-step">
                         <div class="step-number">6</div>
                         <div class="step-content">
                             <h3>Post-order debrief</h3>
                             <p>30 days after delivery, we check in. Did everything arrive as expected? Any issues? This flags problems early and builds a relationship for your next order.</p>
-                            <div class="step-detail">
-                                <strong>Repeat clients:</strong> 0.5% commission discount from your 3rd order onward.
-                            </div>
+                            <div class="step-detail"><strong>Repeat clients:</strong> 0.5% commission discount from your 3rd order onward.</div>
                         </div>
                     </div>
                 </div>
@@ -119,16 +102,18 @@
             <div class="container">
                 <div class="info-grid">
                     <div class="info-card">
+                        <img src="images/timeline.jpg" alt="Typical timeline" class="info-image">
                         <h3>⏱️ Typical timeline</h3>
                         <ul>
                             <li>Discovery call: same day</li>
                             <li>Retainer paid: within 3 days</li>
                             <li>Spec briefing: after retainer paid</li>
-                            <li>Quotes delivered: 5–7 business days</li>
-                            <li>Full order cycle: 4–8 weeks</li>
+                            <li>Quotes delivered: 5-7 business days</li>
+                            <li>Full order cycle: 4-8 weeks</li>
                         </ul>
                     </div>
                     <div class="info-card">
+                        <img src="images/cost.jpg" alt="Total fee breakdown" class="info-image">
                         <h3>💰 Total fee breakdown</h3>
                         <ul>
                             <li>Retainer: paid upfront (50/50 split)</li>
@@ -138,6 +123,7 @@
                         </ul>
                     </div>
                     <div class="info-card">
+                        <img src="images/dont.jpg" alt="What we never do" class="info-image">
                         <h3>🛡️ What we never do</h3>
                         <ul>
                             <li>Hold your supplier payment</li>
@@ -250,6 +236,15 @@
             padding: 24px;
             border-radius: 16px;
             box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .info-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 16px;
         }
 
         .info-card h3 {
@@ -261,6 +256,7 @@
         .info-card ul {
             list-style: none;
             padding: 0;
+            text-align: left;
         }
 
         .info-card li {
