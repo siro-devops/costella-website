@@ -59,6 +59,15 @@ header {
     letter-spacing: -0.5px;
 }
 
+.logo-second {
+    display: block;
+    font-size: 20px;
+    color: var(--blue);
+    font-weight: 500;
+    margin-top: 2px;
+    letter-spacing: 0.3px;
+}
+
 .logo-tagline {
     display: block;
     font-size: 12px;
