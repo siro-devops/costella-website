@@ -12,9 +12,9 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <span class="logo-text">Costella</span>
-                <span class="logo-second">Procurement and Sourcing Advisory</span>
-                <span class="logo-tagline">We speak to factories so you don't have to.</span>
+                <div class="logo-text">Costella</div>
+                <div class="logo-second">Procurement Advisory</div>
+                <div class="logo-tagline">Sourced right. Every time.</div>
             </div>
             <nav>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
@@ -30,11 +30,12 @@
     </header>
 
     <main>
-        <section class="hero">
+        <!-- Hero Section with Background Image -->
+        <section class="hero" style="background: linear-gradient(rgba(4, 44, 83, 0.85), rgba(4, 44, 83, 0.85)), url('images/hero-bg.jpg'); background-size: cover; background-position: center;">
             <div class="container hero-container">
                 <div class="hero-content">
                     <h1>Your procurement desk <span class="highlight">in China.</span></h1>
-                    <p class="hero-subtitle">We source industrial equipment from Chinese manufacturers with the right specifications, at the right price, without the stress of managing overseas suppliers directly.</p>
+                    <p class="hero-subtitle">We source industrial equipment from Chinese manufacturers — with the right specifications, at the right price, without the stress of managing overseas suppliers directly.</p>
                     <div class="hero-buttons">
                         <a href="contact.html" class="btn btn-primary">Free 30-min consult →</a>
                         <a href="services.html" class="btn btn-outline">See pricing</a>
@@ -42,33 +43,70 @@
                     <div class="hero-trust">
                         <span>✓ Published pricing</span>
                         <span>✓ No hidden fees</span>
-                        <span>✓ Retainer + commission</span>
+                        <span>✓ Retainer + commission — separate</span>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Product Slideshow Section -->
+        <section class="slideshow-section">
+            <div class="container">
+                <h2 class="section-title">Products We've Sourced</h2>
+                <div class="slideshow-container">
+                    <div class="slideshow-track" id="slideshowTrack">
+                        <div class="slide"><img src="images/satchet.jpg" alt="Satchet packaging"></div>
+                        <div class="slide"><img src="images/waterbottle.jpg" alt="Water bottle"></div>
+                        <div class="slide"><img src="images/soap.jpg" alt="Soap"></div>
+                        <div class="slide"><img src="images/pluogher.jpg" alt="Plougher"></div>
+                        <div class="slide"><img src="images/plates.jpg" alt="Plates"></div>
+                        <div class="slide"><img src="images/snackbox.jpg" alt="Snack box"></div>
+                        <div class="slide"><img src="images/packbag.jpg" alt="Pack bag"></div>
+                        <div class="slide"><img src="images/packaging.jpg" alt="Packaging"></div>
+                        <div class="slide"><img src="images/oven.jpg" alt="Oven"></div>
+                        <div class="slide"><img src="images/ovenn.jpg" alt="Industrial oven"></div>
+                        <div class="slide"><img src="images/ovennn.jpg" alt="Commercial oven"></div>
+                        <div class="slide"><img src="images/dryfruit.jpg" alt="Dry fruit machine"></div>
+                        <div class="slide"><img src="images/mixer2.jpg" alt="Industrial mixer"></div>
+                        <div class="slide"><img src="images/grinder.jpg" alt="Grinder"></div>
+                        <div class="slide"><img src="images/lasercutting.jpg" alt="Laser cutting"></div>
+                        <div class="slide"><img src="images/laser.jpg" alt="Laser machine"></div>
+                        <div class="slide"><img src="images/spindleinsert.jpg" alt="Spindle insert"></div>
+                        <div class="slide"><img src="images/aluminum.jpg" alt="Aluminum work"></div>
+                        <div class="slide"><img src="images/gears.jpg" alt="Gears"></div>
+                        <div class="slide"><img src="images/3axis.jpg" alt="3 Axis machine"></div>
+                        <div class="slide"><img src="images/3d.jpg" alt="3D design"></div>
+                        <div class="slide"><img src="images/3dprinter.jpg" alt="3D printer"></div>
+                        <div class="slide"><img src="images/cnc.jpg" alt="CNC machine"></div>
+                    </div>
+                    <button class="slideshow-prev" id="slideshowPrev">❮</button>
+                    <button class="slideshow-next" id="slideshowNext">❯</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section with Images -->
         <section class="problem">
             <div class="container">
                 <h2 class="section-title">Bought from China before?<br>You know the risks.</h2>
                 <div class="problem-grid">
                     <div class="problem-card">
-                        <div class="problem-emoji">🔍</div>
+                        <img src="images/wrong.jpg" alt="Wrong specifications" class="problem-image">
                         <h3>Wrong specifications</h3>
                         <p>"Looks right in photos" doesn't mean it works for your production line.</p>
                     </div>
                     <div class="problem-card">
-                        <div class="problem-emoji">💰</div>
+                        <img src="images/cost.jpg" alt="Hidden costs" class="problem-image">
                         <h3>Hidden costs</h3>
                         <p>Price changes after deposit. New fees appear. Quality drops.</p>
                     </div>
                     <div class="problem-card">
-                        <div class="problem-emoji">🗣️</div>
+                        <img src="images/langtime.jpg" alt="Language and time zones" class="problem-image">
                         <h3>Language & time zones</h3>
                         <p>WeChat translation fails. Emails go unanswered for days.</p>
                     </div>
                     <div class="problem-card">
-                        <div class="problem-emoji">🏭</div>
+                        <img src="images/factory.jpg" alt="Who is the real factory" class="problem-image">
                         <h3>Who is the real factory?</h3>
                         <p>Traders pretending to be manufacturers. No way to verify.</p>
                     </div>
@@ -84,7 +122,7 @@
                         <span class="solution-check">✓</span>
                         <div>
                             <h3>We speak factory</h3>
-                            <p>Mandarin, technical specs, and the real questions to ask, built into our process.</p>
+                            <p>Mandarin, technical specs, and the real questions to ask — built into our process.</p>
                         </div>
                     </div>
                     <div class="solution-item">
@@ -158,7 +196,7 @@
                     </div>
                 </div>
                 <div class="tiers-note">
-                    <p><strong>How our pricing works:</strong> Retainer covers upfront sourcing work (spec briefing, supplier research, vetting). Commission is paid when you confirm your order. Retainer is not credited against commission.</p>
+                    <p><strong>How our pricing works:</strong> Retainer covers upfront sourcing work (spec briefing, supplier research, vetting). Commission is paid in addition when you confirm your order. Retainer is not credited against commission.</p>
                     <p style="margin-top: 8px;">✓ Minimum commission $300 per order ✓ 50% retainer upfront, 50% before spec briefing</p>
                 </div>
             </div>
