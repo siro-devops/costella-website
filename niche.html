@@ -12,8 +12,9 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <span class="logo-text">Costella</span>
-                <span class="logo-tagline">Sourced right. Every time.</span>
+                <div class="logo-text">Costella</div>
+                <div class="logo-second">Procurement Advisory</div>
+                <div class="logo-tagline">Sourced right. Every time.</div>
             </div>
             <nav>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
@@ -29,7 +30,7 @@
     </header>
 
     <main>
-        <section class="hero" style="padding: 60px 0;">
+        <section class="hero" style="padding: 60px 0; background: linear-gradient(rgba(4, 44, 83, 0.9), rgba(4, 44, 83, 0.9)), url('images/hero-bg.jpg'); background-size: cover; background-position: center;">
             <div class="container">
                 <h1>What we source</h1>
                 <p class="hero-subtitle" style="max-width: 600px;">Industrial equipment only. No consumer goods. No distractions.</p>
@@ -39,10 +40,8 @@
         <section class="niche-categories" style="padding: 40px 0 60px;">
             <div class="container">
                 <div class="category-grid">
-                    
-                    <!-- Category 1 -->
                     <div class="category-card">
-                        <div class="category-icon">📦</div>
+                        <img src="images/foodbox.jpg" alt="Packaging Machines" class="category-image">
                         <h3>Packaging Machines</h3>
                         <p>Fillers, sealers, labelers, cartoners, shrink wrappers, and complete packaging lines.</p>
                         <div class="category-examples">
@@ -52,9 +51,8 @@
                         </div>
                     </div>
 
-                    <!-- Category 2 -->
                     <div class="category-card">
-                        <div class="category-icon">🍽️</div>
+                        <img src="images/mixer.jpg" alt="Food Processing Equipment" class="category-image">
                         <h3>Food Processing Equipment</h3>
                         <p>Grinders, mixers, dryers, conveyors, sorters, and commercial kitchen equipment.</p>
                         <div class="category-examples">
@@ -64,9 +62,8 @@
                         </div>
                     </div>
 
-                    <!-- Category 3 -->
                     <div class="category-card">
-                        <div class="category-icon">🔧</div>
+                        <img src="images/drillbits.jpg" alt="Workshop Tools & Machinery" class="category-image">
                         <h3>Workshop Tools & Machinery</h3>
                         <p>CNC machines, lathes, presses, welding equipment, and fabrication tools.</p>
                         <div class="category-examples">
@@ -76,9 +73,8 @@
                         </div>
                     </div>
 
-                    <!-- Category 4 -->
                     <div class="category-card">
-                        <div class="category-icon">🌾</div>
+                        <img src="images/tractor.jpg" alt="Agricultural Processing" class="category-image">
                         <h3>Agricultural Processing</h3>
                         <p>Shellers, mills, presses, dryers, and post-harvest processing equipment.</p>
                         <div class="category-examples">
@@ -181,168 +177,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-
-    <style>
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 32px;
-        }
-
-        .category-card {
-            background: var(--white);
-            border: 1px solid #e0e7f0;
-            border-radius: 20px;
-            padding: 32px 24px;
-            transition: all 0.2s;
-            box-shadow: var(--shadow);
-        }
-
-        .category-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .category-icon {
-            font-size: 48px;
-            margin-bottom: 16px;
-        }
-
-        .category-card h3 {
-            font-size: 22px;
-            margin-bottom: 12px;
-            color: var(--navy);
-        }
-
-        .category-card p {
-            color: var(--gray-dark);
-            margin-bottom: 20px;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-        .category-examples {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .example-tag {
-            background: var(--ice);
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            color: var(--navy);
-        }
-
-        .dont-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 16px;
-            margin-bottom: 32px;
-        }
-
-        .dont-card {
-            background: var(--white);
-            padding: 16px 20px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            border-left: 4px solid #e74c3c;
-        }
-
-        .dont-cross {
-            color: #e74c3c;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .dont-card p {
-            margin: 0;
-            font-size: 14px;
-        }
-
-        .dont-note {
-            text-align: center;
-            font-size: 14px;
-            color: var(--gray-dark);
-            margin-top: 24px;
-            font-style: italic;
-        }
-
-        .specialize-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 48px;
-            align-items: center;
-        }
-
-        .specialize-content h2 {
-            color: var(--navy);
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        .specialize-content p {
-            margin-bottom: 20px;
-            color: var(--gray-dark);
-        }
-
-        .specialize-content ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .specialize-content li {
-            padding: 8px 0;
-            padding-left: 24px;
-            position: relative;
-            color: var(--gray-dark);
-        }
-
-        .specialize-content li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--teal);
-            font-weight: bold;
-        }
-
-        .specialize-stats {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
-
-        .stat-box {
-            background: var(--ice);
-            padding: 32px;
-            border-radius: 20px;
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 48px;
-            font-weight: 800;
-            color: var(--navy);
-        }
-
-        .stat-label {
-            font-size: 14px;
-            color: var(--gray-dark);
-        }
-
-        @media (max-width: 768px) {
-            .specialize-grid {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-            
-            .category-grid {
-                gap: 20px;
-            }
-        }
-    </style>
 </body>
 </html>
