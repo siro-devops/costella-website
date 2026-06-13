@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Costella — Procurement & Sourcing Advisory. We source machines, tools, and equipment from China so your business doesn't have to."/>
+  <title>Costella — Procurement & Sourcing Advisory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    /* ── Hero ── */
+    .hero { background: var(--navy); padding: 6rem 0 5rem; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -80px; right: -120px; width: 520px; height: 520px; border-radius: 50%; background: radial-gradient(circle, rgba(55,138,221,0.18) 0%, transparent 70%); pointer-events: none; }
+    .hero::after { content: ''; position: absolute; bottom: -100px; left: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(29,158,117,0.12) 0%, transparent 70%); pointer-events: none; }
+    .hero__inner { display: grid; grid-template-columns: 1fr 420px; gap: 4rem; align-items: center; }
+    .hero__eyebrow { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); margin-bottom: 1rem; }
+    .hero h1 { color: var(--white); margin-bottom: 1.25rem; }
+    .hero h1 em { color: var(--blue); font-style: normal; }
+    .hero__sub { font-size: 1.1rem; color: rgba(255,255,255,0.65); max-width: 520px; margin-bottom: 2.25rem; line-height: 1.7; }
+    .hero__actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .hero__card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 2rem; backdrop-filter: blur(8px); }
+    .hero__card-title { font-family: var(--font-display); color: var(--white); font-size: 1.1rem; margin-bottom: 1.25rem; }
+    .hero__steps { display: flex; flex-direction: column; gap: 1rem; }
+    .hero__step { display: flex; gap: 0.85rem; align-items: flex-start; }
+    .hero__step-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); flex-shrink: 0; margin-top: 7px; }
+    .hero__step p { font-size: 0.9rem; color: rgba(255,255,255,0.72); margin: 0; }
+    .hero__step strong { color: var(--white); display: block; font-size: 0.88rem; margin-bottom: 1px; }
+    @media (max-width: 900px) { .hero__inner { grid-template-columns: 1fr; } .hero__card { display: none; } }
+
+    /* ── Trust bar ── */
+    .trust { background: var(--ice); padding: 1.5rem 0; border-bottom: 1px solid var(--gray-200); }
+    .trust__inner { display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+    .trust__item { display: flex; align-items: center; gap: 0.6rem; font-size: 0.85rem; font-weight: 500; color: var(--navy); }
+    .trust__dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+
+    /* ── Why Costella ── */
+    .why-card { border-top: 3px solid var(--blue); }
+    .why-card h3 { color: var(--navy); margin-bottom: 0.5rem; }
+    .why-card p { font-size: 0.93rem; }
+
+    /* ── Stats ── */
+    .stats-band { background: var(--navy); padding: 4rem 0; }
+    .stats-band .stat__num { color: var(--white); }
+    .stats-band .stat__label { color: rgba(255,255,255,0.6); }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+    @media (max-width: 700px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    /* ── Process ── */
+    .process-list { display: flex; flex-direction: column; gap: 2rem; max-width: 680px; }
+    .process-connector { width: 2px; height: 24px; background: var(--gray-200); margin-left: 19px; }
+
+    /* ── CTA banner ── */
+    .cta-banner { background: linear-gradient(135deg, var(--navy) 0%, #0a4a8a 100%); padding: 5rem 0; text-align: center; }
+    .cta-banner h2 { color: var(--white); margin-bottom: 1rem; }
+    .cta-banner p { color: rgba(255,255,255,0.65); max-width: 520px; margin: 0 auto 2rem; }
+    .cta-banner .btn-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+<!-- ── Nav ── -->
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo">Costella</a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/2347039172842?text=Hi%20Costella%2C%20I%27d%20like%20to%20book%20a%20discovery%20call" target="_blank" class="btn btn--primary nav__cta">Book a Call</a>
+    <div class="nav__burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <div>
+        <p class="hero__eyebrow">Procurement & Sourcing Advisory</p>
+        <h1>We speak to <em>factories</em> so you don't have to</h1>
+        <p class="hero__sub">Costella manages the full China sourcing process — supplier vetting, specification alignment, negotiation, and quality checks — so you get exactly what you paid for.</p>
+        <div class="hero__actions">
+          <a href="https://wa.me/2347039172842?text=Hi%20Costella%2C%20I%27d%20like%20to%20book%20a%20discovery%20call" target="_blank" class="btn btn--primary">Book a Free Discovery Call</a>
+          <a href="services.html" class="btn btn--outline">See Our Services</a>
+        </div>
+      </div>
+      <div class="hero__card">
+        <p class="hero__card-title">How it works</p>
+        <div class="hero__steps">
+          <div class="hero__step"><div class="hero__step-dot"></div><div><strong>Discovery Call</strong><p>Tell us what you need — machines, tools, equipment, devices</p></div></div>
+          <div class="hero__step"><div class="hero__step-dot"></div><div><strong>We Source & Vet</strong><p>We find, verify, and negotiate with the right Chinese manufacturers</p></div></div>
+          <div class="hero__step"><div class="hero__step-dot"></div><div><strong>You Choose</strong><p>We present a shortlist with a full comparison. You pick the supplier</p></div></div>
+          <div class="hero__step"><div class="hero__step-dot"></div><div><strong>We Oversee</strong><p>Pre-shipment checks, order tracking, and QC sign-off before anything ships</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Trust bar ── -->
+<div class="trust">
+  <div class="container trust__inner">
+    <div class="trust__item"><div class="trust__dot"></div>Nigeria-based advisors</div>
+    <div class="trust__item"><div class="trust__dot"></div>You pay suppliers directly</div>
+    <div class="trust__item"><div class="trust__dot"></div>Pre-shipment quality checks</div>
+    <div class="trust__item"><div class="trust__dot"></div>Vetted manufacturer network</div>
+  </div>
+</div>
+
+<!-- ── Why Costella ── -->
+<section class="section">
+  <div class="container">
+    <div class="text-center" style="max-width:600px; margin:0 auto 3rem;">
+      <p class="section-label">Why Costella</p>
+      <h2 class="section-title">Sourcing from China is hard.<br/>We make it straightforward.</h2>
+      <p>Most businesses lose money on wrong specs, unreliable suppliers, or goods that arrive nothing like what was ordered. We prevent all of that.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card why-card fade-in">
+        <div class="card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+        </div>
+        <h3>Vetted Suppliers Only</h3>
+        <p class="mt-2">Every factory we work with is verified — business licence, production capacity, and quality track record confirmed before we recommend them.</p>
+      </div>
+      <div class="card why-card fade-in">
+        <div class="card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+        </div>
+        <h3>Your Money Stays Safe</h3>
+        <p class="mt-2">You pay suppliers directly. We never hold or forward your funds. Our fee is invoiced separately — keeping everything clean, transparent, and risk-free.</p>
+      </div>
+      <div class="card why-card fade-in">
+        <div class="card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        </div>
+        <h3>Spec-Perfect Orders</h3>
+        <p class="mt-2">We challenge vague specifications, catch errors early, and confirm every detail in writing before production begins. What you ordered is what arrives.</p>
+      </div>
+      <div class="card why-card fade-in">
+        <div class="card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        </div>
+        <h3>Same Timezone, Same Language</h3>
+        <p class="mt-2">We're Nigeria-based and understand your business context, regulatory environment, and delivery constraints — unlike agents based in China or the West.</p>
+      </div>
+      <div class="card why-card fade-in">
+        <div class="card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+        <h3>Full Market Access</h3>
+        <p class="mt-2">We source from Alibaba, 1688, Global Sources, and our direct factory network — giving you pricing and options you wouldn't find on your own.</p>
+      </div>
+      <div class="card why-card fade-in">
+        <div class="card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        </div>
+        <h3>Formal, Structured Process</h3>
+        <p class="mt-2">Every engagement begins with a signed proposal and ends with a delivery debrief. No ambiguity, no verbal agreements — professional from start to finish.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Stats ── -->
+<div class="stats-band">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat fade-in"><div class="stat__num">$5k–$50k</div><div class="stat__label">Typical order range managed</div></div>
+      <div class="stat fade-in"><div class="stat__num">48hrs</div><div class="stat__label">Average supplier shortlist turnaround</div></div>
+      <div class="stat fade-in"><div class="stat__num">3–5</div><div class="stat__label">Vetted quotes per order</div></div>
+      <div class="stat fade-in"><div class="stat__num">100%</div><div class="stat__label">Pre-shipment QC on every order</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Process ── -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center;">
+      <div class="fade-in">
+        <p class="section-label">Our Process</p>
+        <h2 class="section-title">Six steps from brief to delivery</h2>
+        <div class="divider"></div>
+        <div class="process-list">
+          <div class="process-step">
+            <div class="process-step__num">1</div>
+            <div class="process-step__body"><h3>Discovery Call</h3><p>Free 30-minute call to understand your product, quantity, budget, and timeline.</p></div>
+          </div>
+          <div class="process-connector"></div>
+          <div class="process-step">
+            <div class="process-step__num">2</div>
+            <div class="process-step__body"><h3>Engagement & Briefing</h3><p>You sign our proposal and complete a detailed spec briefing form. Work begins.</p></div>
+          </div>
+          <div class="process-connector"></div>
+          <div class="process-step">
+            <div class="process-step__num">3</div>
+            <div class="process-step__body"><h3>Supplier Shortlist</h3><p>We identify, vet, and compare 3–5 manufacturers. You receive a full comparison sheet.</p></div>
+          </div>
+          <div class="process-connector"></div>
+          <div class="process-step">
+            <div class="process-step__num">4</div>
+            <div class="process-step__body"><h3>Negotiation</h3><p>We negotiate pricing, lead times, and terms on your behalf.</p></div>
+          </div>
+          <div class="process-connector"></div>
+          <div class="process-step">
+            <div class="process-step__num">5</div>
+            <div class="process-step__body"><h3>QC & Pre-shipment</h3><p>Pre-shipment inspection confirmed before anything leaves the factory.</p></div>
+          </div>
+          <div class="process-connector"></div>
+          <div class="process-step">
+            <div class="process-step__num">6</div>
+            <div class="process-step__body"><h3>Post-delivery Debrief</h3><p>30-day check-in after delivery to confirm everything arrived as specified.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in" style="display:flex; flex-direction:column; gap:1.25rem;">
+        <div class="card" style="border-left:4px solid var(--teal);">
+          <h3 style="font-size:1rem; margin-bottom:0.4rem;">Machinery & Equipment</h3>
+          <p style="font-size:0.9rem;">Generators, compressors, lifting equipment, industrial tools</p>
+        </div>
+        <div class="card" style="border-left:4px solid var(--blue);">
+          <h3 style="font-size:1rem; margin-bottom:0.4rem;">Agricultural Machinery</h3>
+          <p style="font-size:0.9rem;">Threshers, irrigation systems, processing and packaging equipment</p>
+        </div>
+        <div class="card" style="border-left:4px solid var(--teal);">
+          <h3 style="font-size:1rem; margin-bottom:0.4rem;">Manufacturing Equipment</h3>
+          <p style="font-size:0.9rem;">Production lines, packaging machines, food processing equipment</p>
+        </div>
+        <div class="card" style="border-left:4px solid var(--blue);">
+          <h3 style="font-size:1rem; margin-bottom:0.4rem;">Tools & Devices</h3>
+          <p style="font-size:0.9rem;">Industrial tools, medical devices, lab equipment, electronics</p>
+        </div>
+        <div class="card" style="border-left:4px solid var(--teal);">
+          <h3 style="font-size:1rem; margin-bottom:0.4rem;">Power & Energy</h3>
+          <p style="font-size:0.9rem;">Solar panels, inverters, transformers, energy storage systems</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="cta-banner">
+  <div class="container">
+    <p class="section-label" style="color:var(--teal);">Get Started</p>
+    <h2>Ready to source from China the right way?</h2>
+    <p>Book a free 30-minute discovery call. No commitment, no jargon — just a straightforward conversation about what you need.</p>
+    <div class="btn-group">
+      <a href="https://wa.me/2347039172842?text=Hi%20Costella%2C%20I%27d%20like%20to%20book%20a%20discovery%20call" target="_blank" class="btn btn--whatsapp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.107.549 4.09 1.512 5.814L0 24l6.335-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.523-5.18-1.434l-.371-.221-3.762.982.999-3.651-.242-.378A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        WhatsApp Us
+      </a>
+      <a href="contact.html" class="btn btn--outline">Send a Message</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">Costella</div>
+        <p class="footer__tagline">We speak to factories so you don't have to.</p>
+        <a href="https://wa.me/2347039172842?text=Hi%20Costella%2C%20I%27d%20like%20to%20book%20a%20discovery%20call" target="_blank" class="btn btn--whatsapp" style="font-size:0.85rem; padding:0.6rem 1.25rem;">Book a Discovery Call</a>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://wa.me/2347039172842" target="_blank">+234 703 917 2842</a></li>
+          <li><a href="mailto:hello@costella.africa">hello@costella.africa</a></li>
+          <li><a href="#">Abuja, Nigeria</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer__divider"/>
+    <div class="footer__bottom">
+      <span>© 2025 Costella Advisory Ltd. All rights reserved.</span>
+      <span>Procurement & Sourcing Advisory</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
